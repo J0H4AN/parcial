@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIBROS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Campo para el título del libro -->
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del libro"
+        android:inputType="text"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para el género del libro -->
+    <EditText
+        android:id="@+id/editTextGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Género del libro"
+        android:inputType="text"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner para seleccionar el autor -->
+    <Spinner
+        android:id="@+id/spinnerAutores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"/> <!-- Aumentar la altura mínima -->
+
+    <!-- Botón para agregar un libro -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Libro"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Botón para actualizar un libro -->
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Libro"
+        android:enabled="false"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ListView para mostrar los libros -->
+    <ListView
+        android:id="@+id/listViewLibros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

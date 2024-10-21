@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.MiembroScreen">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Miembros"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_below="@id/textViewTitulo"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNombre"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:hint="Nombre" />
+
+    <TextView
+        android:id="@+id/textViewApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:layout_below="@id/editTextNombre"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewApellido"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:hint="Apellido" />
+
+    <TextView
+        android:id="@+id/textViewFechaInscripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Inscripción:"
+        android:layout_below="@id/editTextApellido"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextFechaInscripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFechaInscripcion"
+        android:layout_margin="16dp"
+        android:hint="DD/MM/YYYY"
+        android:focusable="false"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Miembro"
+        android:layout_below="@id/editTextFechaInscripcion"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Miembro"
+        android:layout_below="@id/editTextFechaInscripcion"
+        android:layout_margin="16dp"
+        android:layout_toEndOf="@id/buttonAdd"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/listViewMiembros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
